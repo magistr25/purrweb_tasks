@@ -1,0 +1,13 @@
+# Исключить настройки IDE
+.idea/
+Scratches and Consoles/
+
+# Исключить временные файлы
+*.log
+*.tmp
+.DS_Store
+
+# Исключить каталоги, не относящиеся к коду
+node_modules/
+dist/
+
