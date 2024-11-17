@@ -1,0 +1,185 @@
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000033; /* Затемнение */
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease; /* Анимация для плавного перехода */
+}
+
+.modal--hidden {
+    background: transparent; /* Убираем затемнение */
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 335px;
+    height: 547px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-left: -7px;
+}
+
+.modal__content--error {
+    height: 659px;
+    overflow-y: auto;
+    transition: height 0.3s ease;
+}
+
+.modal__close {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__field {
+    margin-bottom: 15px;
+}
+
+.modal__field .required {
+    color: red;
+}
+
+.modal__field label {
+    margin-bottom: 5px;
+    color: #070707;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.modal__field input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 14px;
+    border: 1px solid #F1F1F1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #A7A7A7;
+}
+
+.modal__submit {
+    background-color: #B9B9B9;
+    width: 277px;
+    height: 57px;
+    color: #FFFFFF;
+    border: none;
+    padding: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+
+.modal__submit:hover {
+    background-color: #7229b4;
+}
+
+.modal__policy {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+
+}
+
+.modal__policy a {
+    color: #954CED;
+    text-decoration: underline;
+}
+
+.modal__policy a:hover {
+    text-decoration: underline;
+}
+
+.input-with-flag {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    position: absolute;
+    left: 10px;
+    height: 16px;
+    width: 22px;
+}
+
+input[type="tel"] {
+    padding-left: 40px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #F1F1F1;
+    border-radius: 14px;
+}
+
+input[type="tel"]::placeholder {
+    color: #999;
+}
+
+
+/*Если пустые поля в модальном окне*/
+.modal__field--error input {
+    border: 1px solid #EC1211
+}
+
+.modal__error-message {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EC1211;
+
+}
+
+.modal__error-notification {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #EC1211;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}

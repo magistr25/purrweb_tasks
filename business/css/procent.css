@@ -1,0 +1,57 @@
+/* Блок procent */
+.main__procent {
+
+    padding: 160px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    width: 100%;
+    background: #954CED;
+    height: 286px;
+
+}
+
+.procent__content {
+    width: 100%;
+    max-width: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 40px;
+    margin: -20px -20px 10px 20px;
+
+}
+
+.procent__item {
+    display: flex;
+    align-items: center;
+}
+
+.procent__value {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    min-width: 80px;
+
+
+}
+
+.procent__description {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    white-space: nowrap;
+
+}
+
+.procent__item--first, .procent__item--second, .procent__item--third {
+    width: 346px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: -25px;
+}

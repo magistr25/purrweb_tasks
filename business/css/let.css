@@ -1,0 +1,147 @@
+/* Блок let */
+.main__let {
+    width: 100%;
+    height: 1047px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.let__content {
+    width: 375px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 65px;
+
+
+}
+
+.let__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 343px;
+    height: 261px;
+    padding: 40px 0;
+    border-radius: 60px;
+    margin: 0 auto;
+    border: 1px solid #CFCFCF;
+}
+
+.let__header button {
+    width: 303px;
+}
+
+.let__title {
+    width: 303px;
+    height: 84px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+}
+
+.let__main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 10px;
+    width: 375px;
+    height: 349px;
+}
+
+.let__text {
+    max-width: 375px;
+}
+
+.let__text-title {
+    margin-top: -110px;
+    width: 355px;
+    height: 204px;
+    gap: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.let__text-description {
+    margin-top: -100px;
+    width: 340px;
+    height: 96px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.let__icons {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    padding: 30px 0;
+    margin-left: -30px;
+}
+
+.let__icon--facebook, .let__icon--instagram {
+    height: 64px;
+    width: 64px;
+}
+
+.let__icon--twitter, .let__icon--tiktok {
+    height: 64px;
+    width: 64px;
+    margin-top: 60px;
+}
+
+.let__logos {
+    display: block;
+    margin-top: -130px;
+    text-align: left;
+
+
+}
+
+.let__logo {
+    height: auto;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.let__logo-3 {
+    width: 131px;
+    height: 34px;
+    margin-left: 30px;
+}
+
+.let__logo-2 {
+    width: 149px;
+    height: 42px;
+    margin-left: 30px;
+}
+
+.let__logo-1 {
+    width: 91px;
+    height: 43px;
+    margin-left: 30px;
+}
+
+.let__logo-4 {
+    width: 196px;
+    height: 28px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.let__logo-5 {
+    width: 128px;
+    height: 32px;
+    margin-left: 30px;
+}
