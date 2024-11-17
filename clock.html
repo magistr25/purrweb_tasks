@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <style>
+        /* Базовый стиль часов */
+        .clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+            margin: 20px auto;
+            background-image: url('assets/img.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        /* Центрирование стрелок */
+        .hand {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: #000;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0; /* Начало стрелки в центре */
+        }
+
+
+        .hand.hour {
+            width: 25%;
+            height: 4px; /* Часовая толстая стрелка */
+        }
+
+        .hand.minute {
+            width: 33%;
+        }
+
+        .hand.second {
+            background: rgb(249, 38, 39); /* Красная секундная стрелка */
+            width: 40%;
+        }
+
+        /* Центральная точка часов */
+        .clock::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="clock">
+    <div class="hand hour" id="hour-hand"></div>
+    <div class="hand minute" id="minute-hand"></div>
+    <div class="hand second" id="second-hand"></div>
+</div>
+
+<div class="buttons">
+    <button id="start">Старт</button>
+    <button id="pause">Пауза</button>
+</div>
+
+<script src="clock.js"></script>
+</body>
+</html>
+
