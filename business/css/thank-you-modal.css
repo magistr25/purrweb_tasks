@@ -8,10 +8,10 @@
     text-align: center;
     padding: 0;
     background: #FFFFFF;
-    position: absolute; /* Для точного позиционирования */
-    top: 172px; /* Оставляем для контроля вертикального положения */
-    left: 50%; /* Центрируем по горизонтали */
-    transform: translateX(-50%); /* Смещаем элемент влево на 50% от его ширины */
+    position: absolute;
+    top: 172px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
 }
 
@@ -77,4 +77,8 @@
 
 .thank-you-button:hover {
     background-color: #7229b4;
+}
+.thank-you-content_img {
+    height: 179px;
+    width: 229px;
 }

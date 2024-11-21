@@ -26,5 +26,98 @@ body {
     max-height: 100vh;
 }
 
+.app__button {
+    width: 343px;
+    height: 57px;
+    background-color: #954CED;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', Arial, sans-serif;
+}
+
+.footer__section .app__button {
+    width: 182px;
+    height: 57px;
+}
+
+@media (max-width: 375px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+        width: 100%;
+        font-family: 'Outfit', Arial, sans-serif;
+        background-color: var(--primary-bg);
+    }
+
+    .page {
+        max-width: 100%; /* Вместо фиксированной ширины */
+        margin: 0 auto;
+        padding: 0;
+        background-color: var(--primary-bg);
+        height: 100vh;
+        overflow-x: hidden; /* Избегаем горизонтальной прокрутки */
+    }
+
+
+
+  }
+
+@media (min-width: 1440px) {
+    body {
+        line-height: 1.6;
+        color: #333;
+        background-color: black;
+    }
+    .app__button {
+        width: 182px;
+        height: 57px;
+    }
+
+    .app__button:hover {
+        background-color: #7229b4;
+    }
+
+    .page {
+        height: 5208px;
+    }
+
+    .page__main {
+
+        background: #1B1B1B;
+    }
+
+ }
+
+/* Стили для полосы прокрутки (работает в браузерах на WebKit) */
+body::-webkit-scrollbar {
+    width: 0; /* Ширина вертикальной полосы */
+    height: 12px; /* Высота горизонтальной полосы */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* Прозрачный фон трека */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #954CED; /* Цвет ползунка */
+    border-radius: 6px; /* Скругление углов */
+    border: 3px solid transparent; /* Отступы внутри ползунка */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #7229b4; /* Цвет ползунка при наведении */
+}
+
 
 

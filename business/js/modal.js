@@ -1,5 +1,5 @@
 export function initModals() {
-    const buttons = document.querySelectorAll(".section__button");
+    const buttons = document.querySelectorAll(".app__button");
     const modal = document.getElementById("contactModal");
     const span = document.querySelector(".modal__close");
     const thankYouModal = document.querySelector(".thank-you-modal");
