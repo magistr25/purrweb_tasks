@@ -143,6 +143,16 @@
     height: 57px;
 }
 
+nav {
+    width: 307px;
+    height: 189px;
+}
+
+.footer__links_mobile {
+    margin-top: 155px;
+    color: #fff;
+}
+
 @media (min-width: 1440px) {
     .page__footer {
         height: 188px;
@@ -212,7 +222,7 @@
 
     }
 
-    .footer__link.footer__link_variant {
+     .footer__link.footer__link_variant {
         display: none;
     }
 

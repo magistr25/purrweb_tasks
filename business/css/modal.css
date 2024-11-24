@@ -150,9 +150,9 @@
 }
 
 /* Иконка флага */
-.input-with-flag .flag-icon {
+.flag-icon {
     position: absolute;
-    top: 45%; /* Вертикальное центрирование */
+    top: 30%; /* Вертикальное центрирование */
     left:10px; /* Отступ слева */
     transform: translateY(-50%); /* Центрирование по вертикали */
     height: 16px; /* Размер иконки */

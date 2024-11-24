@@ -128,9 +128,7 @@
     font-size: 30px;
     color: var(--primary-color);
     cursor: pointer;
-
-
-}
+ }
 
 .header__button--contact {
     margin-left: auto;
@@ -165,6 +163,10 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
+}
+
+.header__mobile-menu-button {
+    margin-top: 45px;
 }
 
 @media (min-width: 1440px) {
