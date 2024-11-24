@@ -17,14 +17,19 @@
 
 /* === Поля ввода === */
 .input, .modal__field input {
-    width: 100%;
+    width: 90%;
     height: 40px;
-    padding: 10px 16px;
+    padding: 10px 16px 10px 16px;
     border: 1px solid #F1F1F1;
     border-radius: 14px;
     font-size: 14px;
     color: #A7A7A7;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* === Поля ввода === */
+.input, .modal__field input[type="tel"] {
+    padding: 10px 16px 10px 40px;
 }
 
 .input:focus, .modal__field input:focus {

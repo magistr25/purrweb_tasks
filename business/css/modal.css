@@ -85,7 +85,6 @@
 }
 
 .modal__field input {
-    width: 100%;
     height: 40px;
     padding: 10px 16px;
     border-radius: 14px;
@@ -141,33 +140,56 @@
     text-decoration: underline;
 }
 
+/* Контейнер для флага и номера телефона */
 .input-with-flag {
-    position: relative;
     display: flex;
     align-items: center;
+    position: relative;
+
+
 }
 
-.flag-icon {
+/* Иконка флага */
+.input-with-flag .flag-icon {
     position: absolute;
-    left: 10px;
-    bottom: 12px;
-    height: 16px;
+    top: 45%; /* Вертикальное центрирование */
+    left:10px; /* Отступ слева */
+    transform: translateY(-50%); /* Центрирование по вертикали */
+    height: 16px; /* Размер иконки */
     width: 22px;
-    border: #F1F1F1 1px solid;
+    pointer-events: none; /* Флаг не взаимодействует с кликами */
 }
 
-input[type="tel"] {
-    padding-left: 40px;
-    height: 40px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid #F1F1F1;
+/* Префикс "+7" */
+.phone-prefix {
+    font-size: 16px; /* Фиксированный размер шрифта */
+    font-weight: normal; /* Нормальный вес */
+    color: #000; /* Цвет текста */
+    margin-right: 5px; /* Отступ от поля ввода */
+    white-space: nowrap; /* Защита от переноса */
+}
+
+/* Поле ввода */
+.input[type="tel"] {
+    width: 273px;
+     border: 1px solid #F1F1F1;
     border-radius: 14px;
+    font-size: 16px; /* Размер текста в поле */
+    font-weight: 400; /* Обычный вес */
+
 }
 
-input[type="tel"]::placeholder {
-    color: #999;
+/* При вводе текста */
+input[type="tel"]:focus {
+
 }
+
+    /* Placeholder */
+input[type="tel"]::placeholder {
+    color: #999; /* Цвет плейсхолдера */
+    font-size: 16px; /* Размер шрифта */
+    width: 273px;
+  }
 
 
 
