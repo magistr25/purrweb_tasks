@@ -1,5 +1,5 @@
 /* Хедер */
-.header {
+.page__header{
     width: 100%;
 }
 
@@ -73,16 +73,25 @@
     padding: 10px 20px;
 }
 
-.header__logo img {
+.page-header__logo img {
     height: 40px;
     width: auto;
 }
+
+.page-header__menu-toggle {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 /* Бургер-меню */
-.mobile-menu {
+.header__mobile-menu {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5px;
     width: 100%;
     height: 100%;
     background-color: var(--menu-bg);
@@ -91,15 +100,29 @@
     align-items: center;
     padding: 50px 20px;
     margin-left: -5px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+    transition: transform 0.3s ease-in-out;
 }
 
-.mobile-menu.active {
+.header__mobile-menu.active {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: 15px;
+
 }
 
-.mobile-menu .close-btn {
+.header__mobile-menu-close {
+    width: 345px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 140px;
+
+}
+
+.modal__close-btn {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -110,22 +133,30 @@
 
 }
 
-.mobile-menu .app__button {
-    margin-top: 136px;
+.header__button--contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
 }
 
-.mobile-menu nav ul {
+.header__mobile-menu nav ul {
     list-style: none;
     padding: 0;
     margin: 177px 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.mobile-menu nav li {
+.header__mobile-menu nav li {
     margin-bottom: 10px;
 }
 
-.mobile-menu nav a {
+.header__mobile-menu nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 20px;
@@ -138,7 +169,7 @@
 }
 
 @media (min-width: 1440px) {
-    .header {
+    .page__header {
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -168,10 +199,11 @@
         padding: 0 60px 0 50px;
     }
 
-    .header__logo img {
+    .page-header__logo img {
         height: 53px;
         width: 157px;
     }
+
 
     .header__button {
         width: 182px;

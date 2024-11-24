@@ -1,4 +1,4 @@
-/* Блок why */
+/* Блок "Почему Budss" */
 .why__content {
     margin-top: 40px;
     padding: 40px 0;
@@ -39,7 +39,7 @@
 
 }
 
-.rectangle-violet {
+.why__rectangle-violet {
 
     position: relative;
     width: 244px;
@@ -59,14 +59,14 @@
     margin: 40px auto;
 }
 
-.why__card__text h3, .why__card__text p {
+.why-card__text h3, .why-card__text p {
 
     margin-left: -20px;
     text-align: left;
     color: #000000;;
 }
 
-.why__card__text h3 {
+.why-card__text h3 {
     margin-top: -20px;
     width: 303px;
     font-size: 32px;
@@ -75,7 +75,7 @@
     text-align: left;
 }
 
-.why__card__text p {
+.why-card__text p {
     width: 303px;
     font-size: 16px;
     font-weight: 400;
@@ -126,7 +126,7 @@
 }
 
 
-.why__card--1 > .why__card__text {
+.why__card--1 > .why-card__text {
     display: flex;
     flex-direction: column;
     width: 364px;
@@ -137,7 +137,7 @@
     gap: 20px;
 }
 
-.why__card--2 > .why__card__text {
+.why__card--2 > .why-card__text {
     display: flex;
     flex-direction: column;
     width: 416px;
@@ -149,12 +149,12 @@
     position: relative;
 }
 
-.why__card--4 > .why__card__text p{
+.why__card--4 > .why-card__text p{
    width: 276px;
     padding: 0;
 }
 
-.desktop-image {
+.why__card-image--desktop {
     display: none;
 }
 
@@ -190,7 +190,7 @@
 
 }
 
-.why__card--3 > .why__card__text {
+.why__card--3 > .why-card__text {
     display: flex;
     flex-direction: column;
     width: 440px;
@@ -209,12 +209,12 @@
     border-radius: 30px;
 }
 
-.why__card--3 > .why__card__text > p {
+.why__card--3 > .why-card__text > p {
     width: 308px;
     height: 72px;
 }
 
-.why__card--4 > .why__card__text {
+.why__card--4 > .why-card__text {
     display: flex;
     flex-direction: column;
     width: 402px;
@@ -233,9 +233,98 @@
 
 }
 
+@media (min-width: 800px) and (max-width: 1439px) {
+    .why__content {
+        height: 800px;
+
+}
+
+
+    .why__cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 450px;
+        justify-content: center;
+        gap: 20px;
+        margin: 80px auto;
+    }
+
+    .why-card__text > .mobile-image {
+        display: none;
+    }
+
+    .why__card > .why__card-image--desktop {
+        display: block;
+        width: 30%;
+
+
+    }
+
+    .why__card {
+        width: auto;
+        position: relative;
+    }
+
+    .why__card.why__card--1,
+    .why__card.why__card--4{
+        width: 420px;
+        height: 230px;
+        border-radius: 30px;
+        background: #F5F5F5;
+        display: flex;
+    }
+
+    .why__card.why__card--2,
+    .why__card.why__card--3{
+        width: 314px;
+        height: 230px;
+        border-radius: 30px;
+        background: #F5F5F5;
+        display: flex;
+
+    }
+
+
+    .why__card--1 > .why-card__text {
+        margin-top: -175px;
+        margin-left: 130px;
+
+    }
+    .why__card--2 > .why-card__text {
+        margin-top: 40px;
+        margin-left: 30px;
+
+    }
+
+
+    .why__card.why__card--4 img{
+        margin-left: 270px;
+        margin-top: -165px;
+
+    }
+    .why__card.why__card--3 img{
+     z-index: 1;
+
+    }
+    .why__card--2 > .why-card__text{
+        position: relative;
+        z-index: 2;
+    }
+    .why__card--3 > .why-card__text {
+        position: relative;
+        left: -10px;
+        z-index: 2;
+        gap: 0;
+    }
+
+}
+
+
+
 @media (min-width: 1440px) {
 
-    .rectangle-violet {
+    .why__rectangle-violet {
         position: relative;
         z-index: 1;
         top: -43px;
@@ -293,11 +382,11 @@
         margin: 80px auto;
     }
 
-    .why__card__text > .mobile-image {
+    .why-card__text > .mobile-image {
         display: none;
     }
 
-    .why__card > .desktop-image {
+    .why__card > .why__card-image--desktop {
         display: block;
     }
 
@@ -313,7 +402,7 @@
         display: flex;
     }
 
-    .why__card--1 > .why__card__text {
+    .why__card--1 > .why-card__text {
         display: flex;
         flex-direction: column;
         width: 364px;
@@ -324,7 +413,7 @@
         gap: 20px;
     }
 
-    .why__card__text h3 {
+    .why-card__text h3 {
         margin-top: -20px;
         width: 364px;
         text-align: left;
@@ -335,7 +424,7 @@
         text-decoration-skip-ink: none;
     }
 
-    .why__card__text p {
+    .why-card__text p {
         font-size: 20px;
         font-weight: 400;
         line-height: 24px;
@@ -354,7 +443,7 @@
         display: flex;
     }
 
-    .why__card--2 > .why__card__text {
+    .why__card--2 > .why-card__text {
         display: flex;
         flex-direction: column;
         width: 416px;
@@ -362,7 +451,7 @@
         gap: 20px;
     }
 
-    .why__card--2 > .why__card__text h3 {
+    .why__card--2 > .why-card__text h3 {
         margin-top: 5px;
         width: 416px;
         text-align: left;
@@ -373,7 +462,7 @@
         text-decoration-skip-ink: none;
     }
 
-    .why__card__text p {
+    .why-card__text p {
         font-size: 20px;
         font-weight: 400;
         line-height: 24px;
@@ -403,17 +492,17 @@
 
     }
 
-    .why__card--2 > .why__card__text,
-    .why__card--4 > .why__card__text {
+    .why__card--2 > .why-card__text,
+    .why__card--4 > .why-card__text {
         margin-left: 50px;
     }
 
-    .why__card--3 > .why__card__text h3 {
+    .why__card--3 > .why-card__text h3 {
         margin-top: 5px;
         width: 440px;
     }
 
-    .why__card--4 > .why__card__text h3 {
+    .why__card--4 > .why-card__text h3 {
         margin-top: 5px;
         width: 440px;
     }
@@ -425,12 +514,32 @@
         height: 301px;
     }
 
-    .why__card--4 > .why__card__text p {
+    .why__card--4 > .why-card__text p {
         width: 402px;
     }
-    .rectangle-violet {
+    .why__rectangle-violet {
         top: -35px;
         height: 34px;
+    }
+    .why__card--2 > .why-card__text p {
+        width: 426px;
+    }
+
+    .why__card-img-1 {
+        width: 72px;
+        height: 64px;
+        left: 60px;
+    }
+
+    .why__card-img-2 {
+        width: 93px;
+        height: 86px;
+        left: 380px;
+    }
+    .why__card-img-3 {
+        width: 88px;
+        height: 167px;
+        top: 80px;
     }
 
 }

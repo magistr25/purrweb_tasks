@@ -1,4 +1,4 @@
-/* Блок budss */
+/* Блок "Как работает Budss" */
 
 .budss {
     margin-top: 1050px;
@@ -45,21 +45,20 @@
 }
 
 /* Цвет текста для разных классов */
-.budss__text-item.blue {
+.budss__text-item.budss__text-item--blue {
 
     color: #30D5C8;
 }
 
-.budss__text-item.violet {
+.budss__animated-text-item--violet {
     color: #954CED;
 }
 
-.budss__text-item.orange {
+.budss__animated-text-item--orange {
     color: #F8A24E;
 }
 
 /* Смещение для строк */
-
 
 .budss__moving-text--top {
     justify-content: flex-end;
@@ -207,15 +206,15 @@
     }
 
 
-    .budss__text-item.blue {
+    .budss__text-item.budss__text-item--blue {
         color: #30D5C8;
     }
 
-    .budss__text-item.violet {
+    .budss__animated-text-item--violet {
         color: #954CED;
     }
 
-    .budss__text-item.orange {
+    .budss__animated-text-item--orange {
         color: #F8A24E;
     }
 

@@ -7,11 +7,13 @@
     box-sizing: border-box;
 }
 
-.section__menu {
-    display: block;
+.header__menu-toggle {
+    all: unset; /* Сбрасывает все стили */
+    display: none; /* Чтобы кнопка вела себя как изображение */
+    cursor: pointer;
 }
 
-.section--theme-black {
+.section__background--theme-black {
     background-color: #1B1B1B;
     margin-bottom: -135px;
 }
@@ -89,7 +91,7 @@
     margin-top: 20px;
 }
 
-.main__section .section__button {
+.section__button {
     width: 343px;
     max-width: 343px;
     padding: 15px 20px;
@@ -138,6 +140,7 @@
 
 .section__button {
     width: 343px;
+
 }
 
 .section__image-wrapper {
@@ -256,7 +259,7 @@
         margin-bottom: 20px;
     }
 
-    .main__button {
+    .section__button {
         width: 182px;
         height: 57px;
         padding: 16px 30px;
@@ -274,8 +277,7 @@
         align-items: center;
         transition: background-color 0.3s ease;
     }
-
-    .main__button:hover {
+    .section__button:hover {
         background-color: #7229b4;
     }
 

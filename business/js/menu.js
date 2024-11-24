@@ -1,7 +1,7 @@
 export function initBurgerMenu() {
     const burgerMenu = document.getElementById('burger-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeBtn = document.querySelector('.close-btn');
+    const mobileMenu = document.getElementById('header__mobile-menu');
+    const closeBtn = document.querySelector('.modal__close-btn');
     const headerButton = document.querySelector('.header__button'); // Кнопка Contact Sales
 
     function toggleMenuDisplay() {

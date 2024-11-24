@@ -1,4 +1,4 @@
-/* Блок about */
+/* Блок "О Budss" */
 .about {
     width: 375px;
     top: 475px;
@@ -107,7 +107,6 @@
 }
 
 
-
 .about__feature--block1 {
     width: 321px;
     height: 200px;
@@ -185,14 +184,16 @@
     display: none;
 }
 
-@media (min-width: 800px) and (max-width: 1147px){
+@media (min-width: 800px) and (max-width: 1147px) {
 
     .about__container {
         height: 659px;
         margin-top: -350px;
         margin-left: 40px;
 
+
     }
+
     .about__column-title-image {
         top: -215px;
         left: 100px;
@@ -205,34 +206,39 @@
         gap: 50px;
 
     }
+    .about__column-content {
+        display: flex;
+        flex-direction: column;
 
-    .about__feature--block1
-    {
+    }
+
+    .about__feature--block1 {
         margin-bottom: 0;
 
     }
+
     .about__feature--block2 {
         margin-top: 40px;
 
     }
 
-    .about__feature--block3
-    {
+    .about__feature--block3 {
         margin-top: -10px;
     }
-    .about__feature--block4
-    {
+
+    .about__feature--block4 {
         padding-top: 10px;
     }
 
 
 }
 
-@media (min-width: 1148px){
-    .main__about .about {
+@media (min-width: 1148px) {
+    .about {
         margin: 0 auto;
         height: 659px;
     }
+
     .about__container {
         height: 659px;
         margin-top: -350px;
@@ -240,9 +246,10 @@
 
 
     }
-    .about__column-left{
+
+    .about__column-left {
         display: block;
-       top: -50px;
+        top: -50px;
         width: 268px;
     }
 
@@ -251,13 +258,16 @@
         flex-direction: row;
         gap: 30px;
     }
+
     .about__title {
         z-index: 2;
     }
+
     .about__column-title--with-image {
         margin-right: 105px;
 
     }
+
     .about__column-title-image {
         top: -220px;
         left: 80px;
@@ -267,6 +277,7 @@
     .about__feature--block1 {
         margin-top: 0;
     }
+
     .about__feature--block2 {
         margin-top: 10px;
     }
@@ -284,11 +295,12 @@
         align-items: center;
         margin-left: 150px;
     }
+
     .about__column-2 {
         margin-top: -120px
     }
 
-    .about__column_content {
+    .about__column-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -300,9 +312,9 @@
 
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 1440px) {
 
-       .about {
+    .about {
         width: 100%;
         height: 653px;
         background-color: #1B1B1B;
@@ -319,6 +331,8 @@
         padding: 40px;
         background-color: #1B1B1B;
         margin-left: 0;
+
+
     }
 
     .about__title {
@@ -337,26 +351,25 @@
 
     .about__columns {
         display: flex;
-        justify-content: space-between;
         align-items: start;
+        gap: 0;
+
     }
 
     .about__column {
         width: 30%;
         text-align: left;
-
-
+    }
+    .about__column-content {
+       margin-left: 85px;
     }
 
     .about__column-1 {
-        margin-left: 150px;
-        gap: 50px;
+         gap: 50px;
     }
 
     .about__column-2 {
-        margin-left: 150px;
         margin-top: 50px;
-        gap: 50px;
     }
 
     .about__column-title {
@@ -433,16 +446,19 @@
         height: 268px;
 
     }
+
     .about__feature--block2 {
         width: 301px;
         height: 290px;
 
     }
+
     .about__feature--block3 {
         width: 306px;
         height: 319px;
 
     }
+
     .about__feature--block4 {
         width: 336px;
         height: 377px;

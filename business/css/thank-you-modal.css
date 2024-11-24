@@ -6,12 +6,12 @@
     height: 477px;
     border-radius: 20px;
     text-align: center;
+    position: fixed;
     padding: 0;
     background: #FFFFFF;
-    position: absolute;
-    top: 172px;
+    top: 410px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 1000;
 }
 
@@ -22,21 +22,20 @@
 }
 
 .thank-you__close {
-    width: 26px;
+    width: 320px;
     height: 26px;
     font-size: 24px;
-    margin-left: 295px;
+    display: flex;
+    justify-content: flex-end;
     color: #B9B9B9;
     gap: 8px;
     border-radius: 35px;
-    display: flex;
-    justify-content: right;
     cursor: pointer;
     margin-top: 15px;
 }
 
 
-.thank-you-content h2 {
+.thank-you-modal__content h2 {
     color: #A64CED;
     margin: 20px auto;
     font-size: 24px;
@@ -45,7 +44,7 @@
     text-align: center;
 }
 
-.thank-you-content p {
+.thank-you-modal__content p {
     width: 295px;
     height: 72px;
     color: #444444;
@@ -57,7 +56,7 @@
 
 }
 
-.thank-you-button {
+.modal__thank-you-button {
     width: 255px;
     height: 57px;
     background: #954CED;
@@ -75,10 +74,52 @@
 
 }
 
-.thank-you-button:hover {
+.modal__thank-you-button:hover {
     background-color: #7229b4;
 }
-.thank-you-content_img {
+.thank-you-modal__content_img {
     height: 179px;
     width: 229px;
+}
+
+@media (min-width: 1440px) {
+    .thank-you-modal {
+        top: 350px;
+        width: 417px;
+        height: 561px;
+
+    }
+    .thank-you__close {
+        display: flex;
+        justify-content: flex-end;
+        width: 400px;
+    }
+    .thank-you-modal__content_img{
+        width: 297px;
+        height: 232px;
+    }
+    .thank-you-modal__content h2 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+    .thank-you-modal__content p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: center;
+        width: 345px;
+        height: 87px;
+    }
+
+    .modal__thank-you-button {
+        width: 337px;
+        font-family: Outfit, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: center;
+
+
+    }
 }

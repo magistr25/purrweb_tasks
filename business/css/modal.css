@@ -3,14 +3,17 @@
     display: none;
     position: fixed;
     z-index: 1000;
-    top: 0;
-    left: 0;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 7px;
     width: 100%;
     height: 100%;
-    background: #00000033;
+
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease;
+    gap: 5px;
 }
 
 .modal--hidden {
@@ -19,17 +22,19 @@
 
 .modal__content {
     background-color: #fff;
-    padding: 20px 30px;
+    padding: 20px;
     border-radius: 20px;
     width: 335px;
     height: 547px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    margin-left: -7px;
 }
 
 .modal__content--error {
     height: 659px;
+    width: 335px;
+    margin-left: -10px;
+    padding-top: 30px;
     overflow-y: auto;
     transition: height 0.3s ease;
 }
@@ -40,7 +45,7 @@
     font-weight: bold;
     cursor: pointer;
     position: absolute;
-    top: 7px;
+    top: 10px;
     right: 15px;
 }
 
@@ -54,10 +59,15 @@
 .modal__form {
     display: flex;
     flex-direction: column;
-}
+    width: 303px;
+    margin-left: -5px;
+
+
+ }
 
 .modal__field {
     margin-bottom: 15px;
+
 }
 
 .modal__field .required {
@@ -88,7 +98,7 @@
 
 .modal__submit {
     background-color: #B9B9B9;
-    width: 277px;
+    width: 303px;
     height: 57px;
     color: #FFFFFF;
     border: none;
@@ -104,6 +114,7 @@
     justify-content: center;
     font-family: 'Outfit', sans-serif;
     margin: 0;
+
 }
 
 
@@ -139,8 +150,10 @@
 .flag-icon {
     position: absolute;
     left: 10px;
+    bottom: 12px;
     height: 16px;
     width: 22px;
+    border: #F1F1F1 1px solid;
 }
 
 input[type="tel"] {
@@ -182,4 +195,56 @@ input[type="tel"]::placeholder {
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+    padding-bottom: 15px;
 }
+.modal__content--error {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Скрыть полосу прокрутки в Firefox */
+    -ms-overflow-style: none; /* Скрыть в старых версиях IE */
+}
+
+.modal__content--error::-webkit-scrollbar {
+    display: none; /* Скрыть полосу прокрутки в WebKit-браузерах */
+}
+@media (min-width: 1440px) {
+
+    .modal__content {
+        width: 417px;
+        height: 587px;
+        top: -50px;
+        padding-top: 10px;
+
+    }
+    .modal__content img {
+
+        margin-top: 7px;
+
+    }
+    .modal__form {
+        width: 337px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .modal__field {
+        width: 337px;
+
+    }
+    .modal__content--error{
+        top: 10px;
+        height: 699px !important;
+    }
+    .modal__submit {
+        width: 182px;
+    }
+
+}
+@media (max-height: 500px) {
+
+    .modal__content {
+        max-height: 100vh; /* Сокращаем высоту для экранов с очень маленькой высотой */
+        margin-top: -350px;
+        overflow-y: auto;
+        border-radius: 16px 16px 0 0;
+    }
+}
+
