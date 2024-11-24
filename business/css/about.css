@@ -65,7 +65,7 @@
     font-weight: 600;
     line-height: 29px;
     position: absolute;
-    width: 268px;
+    width: 278px;
     height: 87px;
     z-index: 2;
 }
@@ -265,7 +265,6 @@
 
     .about__column-title--with-image {
         margin-right: 105px;
-
     }
 
     .about__column-title-image {

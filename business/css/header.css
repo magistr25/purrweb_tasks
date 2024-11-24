@@ -52,7 +52,6 @@
 .header__nav-item--selected .header__nav-link {
     background-color: var(--primary-bg);
     color: var(--primary-color);
-    font-weight: normal;
     padding: 0;
     z-index: 1;
     position: relative;

@@ -7,8 +7,8 @@
           content="Budss offers advanced payment solutions and WOM engine for customer acquisition and retention. Boost your business today!">
     <title>Business</title>
     <!-- Основной шрифт для сайта -->
-<!--    <link rel="stylesheet"-->
-<!--          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap">-->
+    <!--    <link rel="stylesheet"-->
+    <!--          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap">-->
     <!-- Базовые стили -->
     <link rel="stylesheet" href="business/css/base.css">
     <link rel="stylesheet" href="business/css/header.css">
@@ -43,8 +43,21 @@
             <!-- Логотип компании -->
             <div class="page-header__logo">
                 <a href="#">
-                    <img src="business/assets/images/logo.png" height="53" width="157"
-                         alt="Logo of Budss, a business payment service">
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo.webp 1x,
+                        business/assets/images/logo@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo.png 1x,
+                        business/assets/images/logo@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo.png" height="53" width="157"
+                             alt="Logo of Budss, a business payment service">
+                    </picture>
                 </a>
             </div>
             <!-- Кнопка "Связаться с нами" -->
@@ -53,7 +66,21 @@
             </div>
             <!-- Кнопка меню для мобильных -->
             <button class="page-header__menu-toggle" id="burger-menu" aria-label="Toggle menu">
-                <img src="business/assets/images/Burger.png" height="40" width="40" alt="">
+                <picture>
+                    <!-- Версия для WebP -->
+                    <source srcset="
+                        business/assets/images/Burger.webp 1x,
+                        business/assets/images/Burger@2x.webp 2x"
+                            type="image/webp">
+                    <!-- Версия для PNG, если WebP не поддерживается -->
+                    <source srcset="
+                        business/assets/images/Burger.png 1x,
+                        business/assets/images/Burger@2x.png 2x"
+                            type="image/png">
+                    <!-- Основное изображение как fallback -->
+                    <img src="business/assets/images/Burger.png" height="40" width="40" alt="">
+                </picture>
+
             </button>
         </div>
         <!-- Мобильное меню -->
@@ -96,9 +123,36 @@
                     <button class="app__button section__button">Contact sales</button>
                 </div>
                 <div class="section__image-wrapper">
-                    <img class="section__image-mobile" src="business/assets/images/women_mobile.png" height="272"
-                         width="325" alt="Influencer Image"></div>
-                <img class="section__image-desktop" src="business/assets/images/women.png" alt="Influencer Image">
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/women_mobile.webp 1x,
+                        business/assets/images/women_mobile@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/women_mobile.png 1x,
+                        business/assets/images/women_mobile@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img class="section__image-mobile" src="business/assets/images/women_mobile.png" height="272"
+                             width="325" alt="Influencer Image">
+                    </picture>
+                </div>
+                <picture>
+                    <!-- Версия для WebP -->
+                    <source srcset="
+                        business/assets/images/women.webp 1x,
+                        business/assets/images/women@2x.webp 2x"
+                            type="image/webp">
+                    <!-- Версия для PNG, если WebP не поддерживается -->
+                    <source srcset="
+                        business/assets/images/women.png 1x,
+                        business/assets/images/women@2x.png 2x"
+                            type="image/png">
+                    <!-- Основное изображение как fallback -->
+                    <img class="section__image-desktop" src="business/assets/images/women.png" alt="Influencer Image">
+                </picture>
             </div>
         </section>
 
@@ -112,26 +166,77 @@
                         <h3 class="about__column-title about__column-title--with-image">
                             Payment as a service, powered seamlessly by our network of shoppers
                         </h3>
-                        <img class="about__column-title-image" src="business/assets/images/Rectangle.png"
-                             height="45" width="354" alt="">
-
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/Rectangle.webp 1x,
+                        business/assets/images/Rectangle@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/Rectangle.png 1x,
+                        business/assets/images/Rectangle@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img class="about__column-title-image" src="business/assets/images/Rectangle.png"
+                                 height="45" width="354" alt="">
+                        </picture>
                         <div class="about__image-wrapper">
-                            <img class="about__column-left" src="business/assets/images/b.png" alt="B figure">
+                            <picture>
+                                <!-- Версия для WebP -->
+                                <source srcset="
+                        business/assets/images/b.webp 1x,
+                        business/assets/images/b@2x.webp 2x"
+                                        type="image/webp">
+                                <!-- Версия для PNG, если WebP не поддерживается -->
+                                <source srcset="
+                        business/assets/images/b.png 1x,
+                        business/assets/images/b@2x.png 2x"
+                                        type="image/png">
+                                <!-- Основное изображение как fallback -->
+                                <img class="about__column-left" src="business/assets/images/b.png" alt="B figure">
+                            </picture>
                         </div>
                     </div>
                     <!-- Контентная колонка -->
                     <div class="about__column about__column-content">
                         <div class="about__column about__column-1">
                             <div class="about__feature about__feature--block1">
-                                <img class="about__feature-image" src="business/assets/images/Frame%201321314887.png"
-                                     height="100" width="100" alt="Rounded four-pointed star">
+                                <picture>
+                                    <!-- Версия для WebP -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314887.webp 1x,
+                        business/assets/images/Frame_1321314887@2x.webp 2x"
+                                            type="image/webp">
+                                    <!-- Версия для PNG, если WebP не поддерживается -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314887.png 1x,
+                        business/assets/images/Frame_1321314887@2x.png 2x"
+                                            type="image/png">
+                                    <!-- Основное изображение как fallback -->
+                                    <img class="about__feature-image" src="business/assets/images/Frame_1321314887.png"
+                                         height="100" width="100" alt="Rounded four-pointed star">
+                                </picture>
                                 <h3 class="about__feature-title">Contactless</h3>
                                 <p class="about__feature-text">Budss uses near field communication (NFC) for making
                                     contactless payments.</p>
                             </div>
                             <div class="about__feature about__feature--block2">
-                                <img class="about__feature-image" src="business/assets/images/Frame%201321314888.png"
-                                     height="100" width="100" alt="Looped arrow">
+                                <picture>
+                                    <!-- Версия для WebP -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314888.webp 1x,
+                        business/assets/images/Frame_1321314888@2x.webp 2x"
+                                            type="image/webp">
+                                    <!-- Версия для PNG, если WebP не поддерживается -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314888.png 1x,
+                        business/assets/images/Frame_1321314888@2x.png 2x"
+                                            type="image/png">
+                                    <!-- Основное изображение как fallback -->
+                                    <img class="about__feature-image" src="business/assets/images/Frame_1321314888.png"
+                                         height="100" width="100" alt="Looped arrow">
+                                </picture>
                                 <h3 class="about__feature-title">Increased Buying Power</h3>
                                 <p class="about__feature-text">Returning customers spend up to 3X more.</p>
                             </div>
@@ -140,8 +245,21 @@
                         <div class="about__column about__column-2">
 
                             <div class="about__feature about__feature--block3">
-                                <img class="about__feature-image" src="business/assets/images/Frame%201321314889.png"
-                                     height="100" width="100" alt="broken line">
+                                <picture>
+                                    <!-- Версия для WebP -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314889.webp 1x,
+                        business/assets/images/Frame_1321314889@2x.webp 2x"
+                                            type="image/webp">
+                                    <!-- Версия для PNG, если WebP не поддерживается -->
+                                    <source srcset="
+                        business/assets/images/Frame_1321314889.png 1x,
+                        business/assets/images/Frame_1321314889@2x.png 2x"
+                                            type="image/png">
+                                    <!-- Основное изображение как fallback -->
+                                    <img class="about__feature-image" src="business/assets/images/Frame_1321314889.png"
+                                         height="100" width="100" alt="broken line">
+                                </picture>
                                 <h3 class="about__feature-title">Analytics & Insights</h3>
                                 <p class="about__feature-text">Gain a holistic view into your customers' buying behavior
                                     &
@@ -149,8 +267,22 @@
                             </div>
 
                             <div class="about__feature about__feature--block4">
-                                <img class="about__feature-image" src="business/assets/images/Group_30.png" height="51"
-                                     width="101" alt="Two-link chain">
+                                <picture>
+                                    <!-- Версия для WebP -->
+                                    <source srcset="
+                        business/assets/images/Group_30.webp 1x,
+                        business/assets/images/Group_30@2x.webp 2x"
+                                            type="image/webp">
+                                    <!-- Версия для PNG, если WebP не поддерживается -->
+                                    <source srcset="
+                        business/assets/images/Group_30.png 1x,
+                        business/assets/images/Group_30@2x.png 2x"
+                                            type="image/png">
+                                    <!-- Основное изображение как fallback -->
+                                    <img class="about__feature-image" src="business/assets/images/Group_30.png"
+                                         height="51"
+                                         width="101" alt="Two-link chain">
+                                </picture>
                                 <h3 class="about__feature-title">Fraud Protection</h3>
                                 <p class="about__feature-text">Budss handles all payments with a fraud prevention
                                     algorithm
@@ -200,7 +332,20 @@
             </div>
             <div class="budss__content">
                 <div class="budss__phone">
-                    <img src="business/assets/images/smartphone.png" alt="Phone Mockup" class="budss__phone-image">
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/smartphone.webp 1x,
+                        business/assets/images/smartphone@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/smartphone.png 1x,
+                        business/assets/images/smartphone@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/smartphone.png" alt="Phone Mockup" class="budss__phone-image">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -233,17 +378,43 @@
                     <h2 class="why__title">Why Budss</h2>
                     <p class="why__subtitle">We Provide Advanced Payment Solutions
                         To Grow Your Business</p>
-                    <img class="why__rectangle-violet" src="business/assets/images/Rectangle.png" height="45"
-                         width="354"
-                         alt="">
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/Rectangle.webp 1x,
+                        business/assets/images/Rectangle@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/Rectangle.png 1x,
+                        business/assets/images/Rectangle@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img class="why__rectangle-violet" src="business/assets/images/Rectangle.png" height="45"
+                             width="354"
+                             alt="">
+                    </picture>
                 </div>
                 <!-- Карточки преимуществ Budss -->
                 <div class="why__cards">
                     <!-- Карточка 1 -->
                     <article class="why__card why__card--1">
-                        <img src="business/assets/images/card1.png" class="why__card-image why__card-image--desktop"
-                             style="border-radius: 30px 0 0 25px" height="362" width="318" alt="Touchscreen smartphone">
-
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card1.webp 1x,
+                        business/assets/images/card1@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card1.png 1x,
+                        business/assets/images/card1@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/card1.png" class="why__card-image why__card-image--desktop"
+                                 style="border-radius: 30px 0 0 25px" height="362" width="318"
+                                 alt="Touchscreen smartphone">
+                        </picture>
                         <div class="why-card__text">
                             <h3>Turn your
                                 customers into
@@ -253,8 +424,21 @@
                                 exponential power of loyal customers
                                 for acquisition and retention.
                             </p>
-                            <img class="mobile-image" src="business/assets/images/card1_mobile.png" height="193"
-                                 width="343" alt="Touchscreen smartphone">
+                            <picture>
+                                <!-- Версия для WebP -->
+                                <source srcset="
+                        business/assets/images/card1_mobile.webp 1x,
+                        business/assets/images/card1_mobile@2x.webp 2x"
+                                        type="image/webp">
+                                <!-- Версия для PNG, если WebP не поддерживается -->
+                                <source srcset="
+                        business/assets/images/card1_mobile.png 1x,
+                        business/assets/images/card1_mobile@2x.png 2x"
+                                        type="image/png">
+                                <!-- Основное изображение как fallback -->
+                                <img class="mobile-image" src="business/assets/images/card1_mobile.png" height="193"
+                                     width="343" alt="Touchscreen smartphone">
+                            </picture>
                         </div>
                     </article>
                     <!-- Карточка 2 -->
@@ -269,12 +453,52 @@
                                 friends & family to your personalized group.
                             </p>
                         </div>
-                        <img class="why__card-img-1" src="business/assets/images/card2_1.png" height="64" width="72"
-                             alt="Green tote bag">
-                        <img class="why__card-img-2" src="business/assets/images/card2_2.png" height="86" width="93"
-                             alt="Orange tote bag">
-                        <img class="why__card-img-3" src="business/assets/images/card2_3.png" height="167" width="88"
-                             alt="Violet tote bag">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card2_1.webp 1x,
+                        business/assets/images/card2_1@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card2_1.png 1x,
+                        business/assets/images/card2_1@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img class="why__card-img-1" src="business/assets/images/card2_1.png" height="64" width="72"
+                                 alt="Green tote bag">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card2_2.webp 1x,
+                        business/assets/images/card2_2@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card2_2.png 1x,
+                        business/assets/images/card2_2@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img class="why__card-img-2" src="business/assets/images/card2_2.png" height="86" width="93"
+                                 alt="Orange tote bag">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card2_3.webp 1x,
+                        business/assets/images/card2_3@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card2_3.png 1x,
+                        business/assets/images/card2_3@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img class="why__card-img-3" src="business/assets/images/card2_3.png" height="167"
+                                 width="88"
+                                 alt="Violet tote bag">
+                        </picture>
                     </article>
                     <!-- Карточка 3 -->
                     <article class="why__card why__card--3">
@@ -288,8 +512,21 @@
                                 favorite stores.
                             </p>
                         </div>
-                        <img src="business/assets/images/card3.png" style="border-radius: 0 0 30px 0" height="83"
-                             width="202" alt="Blob Thumbs Up">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card3.webp 1x,
+                        business/assets/images/card3@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card3.png 1x,
+                        business/assets/images/card3@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/card3.png" style="border-radius: 0 0 30px 0" height="83"
+                                 width="202" alt="Blob Thumbs Up">
+                        </picture>
                     </article>
                     <!-- Карточка 4 -->
                     <article class="why__card why__card--4">
@@ -303,7 +540,20 @@
                                 rewards for after purchase.
                             </p>
                         </div>
-                        <img src="business/assets/images/card4.png" height="301" width="210" alt="Blob Thumbs Up">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/card4.webp 1x,
+                        business/assets/images/card4@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/card4.png 1x,
+                        business/assets/images/card4@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/card4.png" height="301" width="210" alt="Blob Thumbs Up">
+                        </picture>
                     </article>
                 </div>
             </div>
@@ -328,27 +578,152 @@
                     </div>
 
                     <div class="let__icons">
-                        <img src="business/assets/images/Facebook-Original.png" class="let__icon--facebook"
-                             height="90" width="90" alt="Facebook">
-                        <img src="business/assets/images/Twitter.png" class="let__icon--twitter" height="90" width="90"
-                             alt="Twitter">
-                        <img src="business/assets/images/Inst.png" class="let__icon--instagram" height="90" width="90"
-                             alt="Instagram">
-                        <img src="business/assets/images/Tik-tok.png" class="let__icon--tiktok" height="90" width="90"
-                             alt="TikTok">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/Facebook-Original.webp 1x,
+                        business/assets/images/Facebook-Original@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/Facebook-Original.png 1x,
+                        business/assets/images/Facebook-Original@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/Facebook-Original.png" class="let__icon--facebook"
+                                 height="90" width="90" alt="Facebook">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/Twitter.webp 1x,
+                        business/assets/images/Twitter@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/Twitter.png 1x,
+                        business/assets/images/Twitter@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/Twitter.png" class="let__icon--twitter" height="90"
+                                 width="90"
+                                 alt="Twitter">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/Inst.webp 1x,
+                        business/assets/images/Inst@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/Inst.png 1x,
+                        business/assets/images/Inst@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/Inst.png" class="let__icon--instagram" height="90"
+                                 width="90"
+                                 alt="Instagram">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/Tik-tok.webp 1x,
+                        business/assets/images/Tik-tok@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/Tik-tok.png 1x,
+                        business/assets/images/Tik-tok@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/Tik-tok.png" class="let__icon--tiktok" height="90"
+                                 width="90"
+                                 alt="TikTok">
+                        </picture>
                     </div>
                 </div>
                 <div class="let__logos">
-                    <img src="business/assets/images/logo3.png" class="let__logo let__logo-3" height="48" width="182"
-                         alt="Logo 3">
-                    <img src="business/assets/images/logo2.png" class="let__logo let__logo-2" height="60" width="209"
-                         alt="Logo 2">
-                    <img src="business/assets/images/logo1.png" class="let__logo let__logo-1" height="60" width="126"
-                         alt="Logo 1">
-                    <img src="business/assets/images/logo4.png" class="let__logo let__logo-4" height="40" width="277"
-                         alt="Logo 4">
-                    <img src="business/assets/images/logo5.png" class="let__logo let__logo-5" height="45" width="184"
-                         alt="Logo 5">
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo3.webp 1x,
+                        business/assets/images/logo3@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo3.png 1x,
+                        business/assets/images/logo3@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo3.png" class="let__logo let__logo-3" height="48"
+                             width="182"
+                             alt="Logo 3">
+                    </picture>
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo2.webp 1x,
+                        business/assets/images/logo2@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo2.png 1x,
+                        business/assets/images/logo2@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo2.png" class="let__logo let__logo-2" height="60"
+                             width="209"
+                             alt="Logo 2">
+                    </picture>
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo1.webp 1x,
+                        business/assets/images/logo1@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo1.png 1x,
+                        business/assets/images/logo1@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo1.png" class="let__logo let__logo-1" height="60"
+                             width="126"
+                             alt="Logo 1">
+                    </picture>
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo4.webp 1x,
+                        business/assets/images/logo4@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo4.png 1x,
+                        business/assets/images/logo4@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo4.png" class="let__logo let__logo-4" height="40"
+                             width="277"
+                             alt="Logo 4">
+                    </picture>
+                    <picture>
+                        <!-- Версия для WebP -->
+                        <source srcset="
+                        business/assets/images/logo5.webp 1x,
+                        business/assets/images/logo5@2x.webp 2x"
+                                type="image/webp">
+                        <!-- Версия для PNG, если WebP не поддерживается -->
+                        <source srcset="
+                        business/assets/images/logo5.png 1x,
+                        business/assets/images/logo5@2x.png 2x"
+                                type="image/png">
+                        <!-- Основное изображение как fallback -->
+                        <img src="business/assets/images/logo5.png" class="let__logo let__logo-5" height="45"
+                             width="184"
+                             alt="Logo 5">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -373,7 +748,20 @@
                 <div class="modal__field">
                     <label for="phone">Phone number <span class="required">*</span></label>
                     <div class="input-with-flag">
-                        <img src="business/assets/images/ru.png" class="flag-icon" alt="Flag">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/ru.webp 1x,
+                        business/assets/images/ru@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/ru.png 1x,
+                        business/assets/images/ru@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/ru.png" class="flag-icon" alt="Flag">
+                        </picture>
                         <input type="tel" id="phone" name="phone" placeholder="___ ___-__-__" required>
                     </div>
 
@@ -411,7 +799,21 @@
         <span class="thank-you__close"><img src="business/assets/svg/close-icon.svg" alt="Close Icon" width="26"
                                             height="26"></span>
         <div class="thank-you-modal__content">
-            <img class="thank-you-modal__content_img" src="business/assets/images/thank_you.png" alt="Success Image">
+            <picture>
+                <!-- Версия для WebP -->
+                <source srcset="
+                        business/assets/images/thank_you.webp 1x,
+                        business/assets/images/thank_you@2x.webp 2x"
+                        type="image/webp">
+                <!-- Версия для PNG, если WebP не поддерживается -->
+                <source srcset="
+                        business/assets/images/thank_you.png 1x,
+                        business/assets/images/thank_you@2x.png 2x"
+                        type="image/png">
+                <!-- Основное изображение как fallback -->
+                <img class="thank-you-modal__content_img" src="business/assets/images/thank_you.png"
+                     alt="Success Image">
+            </picture>
             <h2>Thank you!</h2>
             <p>Thank you, we have received your application and will contact you soon!</p>
             <button class="modal__thank-you-button">Super!</button>
@@ -424,8 +826,21 @@
             <div class="footer__top">
                 <div class="footer__section footer__section--left">
                     <div class="footer__logo-container">
-                        <img class="footer__logo" src="business/assets/images/logo.png"
-                             alt="Logo of Budss, a business payment service">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/logo.webp 1x,
+                        business/assets/images/logo@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/logo.png 1x,
+                        business/assets/images/logo@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img class="footer__logo" src="business/assets/images/logo.png"
+                                 alt="Logo of Budss, a business payment service">
+                        </picture>
                     </div>
                     <nav class="footer__links">
                         <a href="#" class="footer__link">For Business</a>
@@ -439,8 +854,34 @@
                 <div class="footer__section footer__section--right">
                     <button class="app__button footer__button">Contact sales</button>
                     <div class="footer__markets">
-                        <img src="business/assets/images/appstore.png" alt="App Store">
-                        <img src="business/assets/images/googleplay.png" alt="Google Play">
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/appstore.webp 1x,
+                        business/assets/images/appstore@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/appstore.png 1x,
+                        business/assets/images/appstore@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/appstore.png" alt="App Store">
+                        </picture>
+                        <picture>
+                            <!-- Версия для WebP -->
+                            <source srcset="
+                        business/assets/images/googleplay.webp 1x,
+                        business/assets/images/googleplay@2x.webp 2x"
+                                    type="image/webp">
+                            <!-- Версия для PNG, если WebP не поддерживается -->
+                            <source srcset="
+                        business/assets/images/googleplay.png 1x,
+                        business/assets/images/googleplay@2x.png 2x"
+                                    type="image/png">
+                            <!-- Основное изображение как fallback -->
+                            <img src="business/assets/images/googleplay.png" alt="Google Play">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -449,8 +890,10 @@
                     <a class="page-footer__legal-text">© Copyright 2023, All Rights Reserved by Budss</a>
                     <div class="page-footer__legal-text">
                         <a class="page-footer__legal-link page-footer__legal-link--hidden-mobile">Privacy Policy</a>
-                        <a class="page-footer__legal-link page-footer__legal-link--hidden-mobile">Terms Of Use-Seller</a>
-                        <a class="page-footer__legal-link page-footer__legal-link--hidden-mobile">Terms Of Use-Sellers & Customers</a>
+                        <a class="page-footer__legal-link page-footer__legal-link--hidden-mobile">Terms Of
+                            Use-Seller</a>
+                        <a class="page-footer__legal-link page-footer__legal-link--hidden-mobile">Terms Of Use-Sellers &
+                            Customers</a>
                     </div>
                 </div>
             </div>

@@ -29,6 +29,8 @@
 }
 
 .why__subtitle {
+    margin-left: -5px;
+    min-width: 351px;
     position: relative;
     z-index: 100;
     font-size: 24px;
@@ -202,7 +204,7 @@
 
 }
 
-.why__card--3 > img {
+.why__card--3 img {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -287,10 +289,28 @@
 
 
     .why__card--1 > .why-card__text {
-        margin-top: -175px;
-        margin-left: 130px;
+        margin-top: 35px;
+        margin-left: 120px;
+
 
     }
+    .why__card-image--desktop {
+        display: block;
+        width: 155px;
+        height: 230px;
+    }
+  .mobile-image {
+      display: none;
+        position: absolute;
+        left: 35px;
+      top: 55px;
+    }
+    .why__card--1 > .why-card__text {
+        margin-top: -190px;
+        margin-left: 135px;
+
+    }
+
     .why__card--2 > .why-card__text {
         margin-top: 40px;
         margin-left: 30px;
@@ -411,6 +431,18 @@
         margin-left: 340px;
         margin-right: 35px;
         gap: 20px;
+    }
+
+    .why__card-image--desktop {
+        display: block;
+        width: 318px;
+        height: 362px;
+    }
+    .mobile-image {
+        display: none;
+    }
+    .why__card--1 > .why-card__text {
+        margin-top: -300px;
     }
 
     .why-card__text h3 {
