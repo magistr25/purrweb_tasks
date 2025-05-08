@@ -125,8 +125,6 @@ export function initForm() {
     });
 
     // Валидация телефона в реальном времени
-    // Валидация телефона в реальном времени
-    // Валидация телефона в реальном времени
     phoneInput.addEventListener('input', () => {
         const phoneFieldContainer = phoneInput.closest('.modal__field');
         const phoneErrorMessage = phoneFieldContainer.querySelector('.modal__error-message');
